@@ -1,4 +1,4 @@
-;;; funcs.el --- epitech layer packages file for Spacemacs.
+;;; funcs.el --- epitech layer funcs file for Spacemacs.
 ;;
 ;; Copyright (c) 2012-2017 Sylvain Benner & Contributors
 ;;

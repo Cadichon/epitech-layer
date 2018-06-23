@@ -12,7 +12,15 @@
 ;;; Code:
 
 (defconst epitech-packages
-  '())
+      '(
+        (epitech-c-style :location local)
+        ))
 
+(defun epitech/init-epitech-c-style ()
+  (use-package epitech-c-style
+    :if (or 'epitech-enable-c-style)
+    :config (progn
+              (when epitech-enable-c-style (add-hook 'c-mode-common-hook 'epitech-set-c-style))))
+  )
 
 ;;; packages.el ends here

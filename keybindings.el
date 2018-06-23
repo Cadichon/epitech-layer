@@ -47,3 +47,7 @@
 	  '(lambda ()
 	     (define-key tex-mode-map ""
 	       'comment-region)))
+
+(global-set-key "" 'backward-delete-char)
+(global-set-key "" 'compile)
+(global-set-key "" 'goto-line)
