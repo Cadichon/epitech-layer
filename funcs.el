@@ -77,22 +77,22 @@
     (setq projdescription (read-from-minibuffer
 			   (format "Type short file description (RETURN to quit) : ")))
 
-    (insert-string (epitech-std-get 'cs))
+    (insert (epitech-std-get 'cs))
     (newline)
-    (insert-string (concat (epitech-std-get 'cc)
+    (insert (concat (epitech-std-get 'cc)
 			   header-epitech
 			   (format-time-string "%Y")))
     (newline)
-    (insert-string (concat (epitech-std-get 'cc)
+    (insert (concat (epitech-std-get 'cc)
 			   projname))
     (newline)
-    (insert-string (concat (epitech-std-get 'cc)
+    (insert (concat (epitech-std-get 'cc)
 			   header-description))
     (newline)
-    (insert-string (concat (epitech-std-get 'cc)
+    (insert (concat (epitech-std-get 'cc)
 			   projdescription))
     (newline)
-    (insert-string (epitech-std-get 'ce))
+    (insert (epitech-std-get 'ce))
     (newline)
     (newline)))
 
@@ -100,7 +100,7 @@
   "Inserts vertical comments (according to mode)."
   (interactive)
   (beginning-of-line)
-  (insert-string (epitech-std-get 'cs))
+  (insert (epitech-std-get 'cs))
   (newline)
   (let ((ok t)(comment ""))
     (while ok
@@ -109,9 +109,9 @@
       (if (= 0 (length comment))
 	  (setq ok nil)
 	(progn
-	  (insert-string (concat (epitech-std-get 'cc) comment))
+	  (insert (concat (epitech-std-get 'cc) comment))
 	  (newline)))))
-  (insert-string (epitech-std-get 'ce))
+  (insert (epitech-std-get 'ce))
   (newline))
 
 (defun epitech-std-toggle-comment ()
@@ -135,9 +135,9 @@
 		    (replace-string (epitech-std-get 'ce) ""))
 		(progn
 		  (beginning-of-line)
-		  (insert-string (epitech-std-get 'cs))
+		  (insert (epitech-std-get 'cs))
 		  (end-of-line)
-		  (insert-string (epitech-std-get 'ce))))))))) 
+		  (insert (epitech-std-get 'ce))))))))) 
   ;;  (indent-according-to-mode)
   (indent-for-tab-command)
   (next-line 1))

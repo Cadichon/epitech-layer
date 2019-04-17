@@ -1,9 +1,9 @@
 ;;;###autoload
 (defconst epitech-c-style
   `("linux"
-    (c-basic-offset . 8)
-    (tab-width . 8)
-    (indent-tabs-mode . t))
+    (c-basic-offset . 4)
+    (tab-width . 4)
+    (indent-tabs-mode . nil))
   "Epitech C/C++ Programming Style")
 
 ;;;###autoload
